@@ -326,6 +326,8 @@ a {
   }
 }
 
+
+
 Login and signup
 
 
@@ -333,11 +335,9 @@ Login and signup
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   background-position: center;
   background-size: cover;
   background-color: rgba(255,255,255,0.5);
-  width: 100%;
 }
 
 .form-box-login{
@@ -349,9 +349,9 @@ Login and signup
   border-radius: 20px;
   backdrop-filter: blur(15px);
   display: flex;
-  justify-content: space-around;
   align-items: center;
   display: none;
+  justify-content: center;
   z-index: 33;
   background-color: rgba(39, 29, 29, 0.5);
   margin-top: 6.5rem;
@@ -367,13 +367,31 @@ Login and signup
   border-radius: 20px;
   backdrop-filter: blur(15px);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   display: none;
   margin-top: 6.5rem;
+  margin-left: 35%;
   z-index: 35;
   background-color: rgba(39, 29, 29, 0.5);
-  margin-left: 35%;
+}
+
+@media screen and (max-width: 1040px) {
+  .form-box-signup{
+    margin-left: 20%;
+  }
+  .form-box-login{
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .form-box-signup{
+    margin-left: 2%;
+  }
+  .form-box-login{
+    justify-content: 2%;
+  }
 }
 
 .logline{
@@ -395,11 +413,13 @@ Login and signup
   top: 50%;
   left: 5px;
   transform: translateY(-50%);
-  color: #983636;
+  color: #f0f0f0;
   font-size: 1em;
   pointer-events: none;
   transition: .5s;
 }
+
+
 input:focus ~ label,
 input:valid ~ label{
 top: -5px;
@@ -412,7 +432,7 @@ top: -5px;
   outline: none;
   font-size: 1em;
   padding:0 35px 0 5px;
-  color: #7a1e1e;
+  color: #f7f7f7;
 }
 
 .i22{
@@ -429,19 +449,19 @@ top: -5px;
   font-size: 1.2em;
   top: 20px;
 }
+
 .forget{
   align-items: center;
   margin: 35px ;
   font-size: .9em;
   color: #fff;
   display: flex;
-  justify-content: space-around;  
+  justify-content: center;  
 }
 
 .forget label a{
   color: #fff;
   text-decoration: none;
-  margin-left: 60px;
 }
 .forget label a:hover{
   text-decoration: underline;
