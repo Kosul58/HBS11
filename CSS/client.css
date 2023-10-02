@@ -1,0 +1,145 @@
+body{
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+.admincont{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.admin{
+    margin-top: 6rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    height: 80vh;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(20, 19, 19, 0.5);
+    backdrop-filter: blur(15px);
+    text-align: center;   
+}
+
+
+.ad1{
+    background-color: rgba(94, 48, 48, 0.65);
+    width: 300px;
+    border-radius: 15px 0 0 15px;
+} 
+
+.ad2{
+    background-color: rgba(94, 48, 48, 0.5);
+    width: 950px;
+    border-radius: 0 15px 15px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.icnt img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.icnt h3{
+    color: bisque;
+    font-size: 15px;
+    margin-top: -2px;
+}
+
+.lit{
+    margin-top:2rem ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lit a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(229, 215, 215);
+}
+
+.lit22{
+    margin-top: 10px;
+    text-align: center;
+    height: 20px;
+    width:155px;
+    padding: 15px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.lit22:hover{
+    background-color: rgba(129, 35, 35, 0.8);
+}
+
+.lit23{
+    margin-top: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 20px;
+    width:155px;
+    padding: 15px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.lit23:hover{
+    background-color: rgba(129, 35, 35, 0.8);
+}
+
+
+.vblock{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(234, 223, 223, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(94, 92, 92, 0.5);
+
+}
+
+.vblock1{
+    display: block;
+}
+
+.vblock2{
+    display: none;
+}
+
+.vblock3{
+    display: none;
+}
+
+.vblock4{
+    display: none;
+}
+
+.vblock5{
+    display: none;
+}
+

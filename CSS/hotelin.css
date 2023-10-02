@@ -1,0 +1,38 @@
+.hotelcont{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.h101{
+    margin-top: 7rem;
+    padding: 0;
+    display: flex;
+    background-color: rgba(20, 19, 19, 0.5);
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width:90%;
+    height: 80vh;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(20, 19, 19, 0.5);
+    backdrop-filter: blur(15px);
+    text-align: center;   
+}
+
+.h201{
+    width: 250px;
+    height: 80%;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+}
+
+.h202{
+    width: 750px;
+    height: 80%;
+    background-color: rgb(77, 165, 121);
+    border-radius: 15px;
+}
+

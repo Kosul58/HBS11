@@ -1,0 +1,63 @@
+.offer {
+    display: block;
+    min-width: 46rem;
+    width: 52rem;
+    height: 450px;
+    margin: 0 1.4rem;
+    background: #fff;
+    padding: 2.5rem 3.15rem 2.5rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    margin: 0px 0px;
+    overflow-x: auto;
+}
+.offer::-webkit-scrollbar{
+    width: 0;
+}
+.mtop .container .heading1{
+ display: block;
+position: relative;
+margin: -12% 0% 0% 31%;
+}
+.mtop .container .heading1 h5{
+    font-size: 1.3rem;
+    color: rgb(216, 155, 43);
+}
+.mtop .container .heading1 h3{
+    color: rgb(42, 42, 245);
+}
+.mtop .container .heading1 h5,h3{
+    text-align: center;
+}
+
+.mtop .flex1 .left img{
+    width: 20rem;
+    height:20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex1{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.grid2{
+    display: flex;
+    margin: 91px 0px ;
+}
+.flex1 .right{
+    font-size: 18px;
+    width: 15rem;
+    margin: -5% 8% 19% 8%;
+    padding:4px ;
+    /* height: 17rem;
+    margin-bottom: 10px; */
+}
+.flex1 .right button{
+    color: rgb(236, 224, 200);
+    border: 1px solid ;
+    border-radius: 10%;
+    background-color: burlywood;
+    font-size: 16px;
+
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/lstyle.css">
+  <link rel="stylesheet" href="/CSS/room.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">     
+  <title>Room</title>
+</head>
+<body>
+<!--=============== HEADER ===============-->
+<header class="header">
+  <nav class="nav container">
+      <div class="nav__data">
+          <a href="#" class="nav__logo">
+              Himalaya Group
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line nav__toggle-menu"></i>
+              <i class="ri-close-line nav__toggle-close"></i>
+          </div>
+      </div>
+
+      <!--=============== NAV MENU ===============-->
+      <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+              <li>
+                  <a href="l.html" class="nav__link">Home</a>
+              </li>
+              <li>
+                  <a href="hotels.html" class="nav__link">Hotel</a>
+              </li>
+              <!--=============== DROPDOWN ===============-->
+              <li class="dropdown__item">      
+                <a href="room.html" class="nav__link">Rooms</a>                                      
+                  <div class="nav__link dropdown__button">
+                     <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+
+                  <div class="dropdown__container">
+                      <div class="dropdown__content">
+                          <div class="dropdown__group">
+                              <div class="dropdown__icon">
+                                  <i class="ri-flashlight-line"></i>
+                              </div>
+
+                              <span class="dropdown__title">Premium</span>
+
+                              <ul class="dropdown__list">
+                                  <li>
+                                      <a href="#" class="dropdown__link">Single Bed</a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="dropdown__link">Double Bed</a>
+                                  </li>
+                              </ul>
+                          </div>
+
+                          <div class="dropdown__group">
+                              <div class="dropdown__icon">
+                                  <i class="ri-heart-3-line"></i>
+                              </div>
+
+                              <span class="dropdown__title">Deluxe</span>
+
+                              <ul class="dropdown__list">
+                                  <li>
+                                      <a href="#" class="dropdown__link">Single Bed</a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="dropdown__link">Double Bed</a>
+                                  </li>
+                              </ul>
+                          </div>
+
+                          <div class="dropdown__group">
+                              <div class="dropdown__icon">
+                                  <i class="ri-book-mark-line"></i>
+                              </div>
+
+                              <span class="dropdown__title">Deluxe<sup>+</sup></span>
+
+                              <ul class="dropdown__list">
+                                  <li>
+                                      <a href="#" class="dropdown__link">Singele Bed</a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="dropdown__link">Double Bed</a>
+                                  </li>
+                              </ul>
+                          </div>
+
+                          <div class="dropdown__group">
+                              <div class="dropdown__icon">
+                                  <i class="ri-file-paper-2-line"></i>
+                              </div>
+
+                              <span class="dropdown__title">Meeting Room</span>
+
+                              <ul class="dropdown__list">
+                                  <li>
+                                      <a href="#" class="dropdown__link">Small</a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="dropdown__link">Medium</a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="dropdown__link">Large</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <a href="about.html" class="nav__link">About</a>
+              </li>
+              <li>
+                  <a href="#" class="nav__link">Book Now</a>
+              </li>
+              <li>
+                 <a href="#" class="nav__link" id="loginBtn">Log In</a>
+              </li>
+              <li>
+                  <a href="#" class="nav__link" id="signupBtn">Sign Up</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</header>
+
+<!--=============== Login-Signup ===============-->
+<div class="section1" >
+  <!--=============== Log IN ===============-->
+  <div class="form-box-login" id="modalContainer">
+    <div class="form-value">
+      <form action="">
+        <div class="closelogin"><i class="fa-solid fa-circle-xmark"></i></div>
+        <div class="logline">Log In</div>
+        <div class="inputbox">
+          <ion-icon name="mail-outline"></ion-icon>
+          <input type="email" required />
+          <label for="">Email</label>
+        </div>
+        <div class="inputbox">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <input type="password" required />
+          <label for="">Password</label>
+        </div>
+        <div class="forget">
+          <label for="">
+            <input type="checkbox">Remember Me
+            <a href="#">Forgot Password</a></label>
+        </div>
+        <div class="logbutton">Log in</div>
+        <div class="register">
+          <p>Don't have a account? <a href="#" id="sign">Sign Up</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--=============== Sign Up ===============-->
+  <div class="form-box-signup" id="modalContainer2">
+    <div class="form-value">
+      <form action="">
+        <div class="closesignup"><i class="fa-solid fa-circle-xmark"></i></div>
+        <div class="logline">Sign Up</div>
+
+        <div class="inputbox">
+            <i class="fa-solid fa-user" style="position: absolute; right: 8px; color: #fff; font-size: 1.2em; top: 20px;"></i>
+            <input type="text" required />
+            <label for="">Username</label>
+          </div>
+
+        <div class="inputbox">
+          <ion-icon name="mail-outline"></ion-icon>
+          <input type="email" required />
+          <label for="">Email</label>
+        </div>
+        <div class="inputbox">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <input type="password" required />
+          <label for="">Password</label>
+        </div>
+        <div class="forget">
+          <label for=""
+            ><input type="checkbox" />Remember Me
+        </div>
+        <div class="logbutton">Sign Up</div>
+        <div class="register">
+          <p>Already have an account?<a href="#" id="log">   Log In</Inp></a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<section class="mrooms">
+  <h2 style="text-align: center;">
+    Our Rooms:
+</h2>
+  
+<div class="roomcontainer">
+  <div
+      class="rslide"
+      style="background-image: url(/IMG/Room/premium.jpeg);"
+  >
+    <h2><a href="#" style="text-decoration: none; color: aliceblue;">Premium Room</a></h2> 
+    <h3>Premium</h3>
+  </div>
+  <div
+      class="rslide"
+      style="
+          background-image: url(/IMG/Room/Deluxe.jpeg);
+        ">
+    <h2><a href="#" style="text-decoration: none; color: aliceblue;">Deluxe Room</a></h2>
+    <h3>Deluxe</h3>
+  </div>
+  <div
+      class="rslide active"
+      style="
+          background-image: url(/IMG/Room/Deluxe+.jpeg);
+        "
+  >
+  <h2><a href="#" style="text-decoration: none; color: aliceblue;">Deluxe<sup>+</sup> Room</a></h2>
+    <h3>Deluxe+</h3>
+
+  </div>
+  <div
+      class="rslide"
+      style="
+          background-image: url(/IMG/Room/meeting.jpeg);
+        "
+  >
+    <h2><a href="#" style="text-decoration: none; color: aliceblue;">Meeting Room</a></h2>
+    <h3>Meeting</h3>
+  </div>
+  </div>
+</section>
+
+<div class="fotter">
+  <div class="footy">
+      <div class="f1">
+          <h1>Himalaya Group</h1>
+      </div>
+      <div class="f3">
+          <h2>Useful Info:</h2>
+          <div class="ficons">
+              <h3><i class="fa-solid fa-location-dot"></i> Address:<br>
+              Matepani , Pokhara</h3>
+              <h3 href="#"><i class="fa-solid fa-square-phone"></i> Phone Number:<br>9816143286</h3>
+              <h3 href="#"><i class="fa-solid fa-square-phone"></i> Email:<br>Himalayagroup@email.com</h3>
+
+          </div>
+      </div>
+      <div class="f4">
+          <h2>Follow Us:</h2>
+          <div class="fimg">
+              <a href="#"><img src="IMG/facebook.png"></a>
+              <a href="#"><img src="IMG/telegram.png"></a>
+              <a href="#"><img src="IMG/twitter.png"></a>
+          </div>
+      </div>
+  </div>
+  <h2><i class="fa-solid fa-copyright fa-xl" style="color: #949ba5;"></i>Himalaya Group</h2>
+</div>
+
+<script src="/JavS/room.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="l.js"></script>
+<script src="login.js"></script>
+<script src="signup.js"></script>
+<script src="sign-log.js"></script>
+</div>
+</body>
+</html>

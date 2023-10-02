@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Chatra {literal} -->
+            <script>
+              (function(d, w, c) {
+                  w.ChatraID = '4AuYyabupwTD39Z7C';
+                  var s = d.createElement('script');
+                  w[c] = w[c] || function() {
+                      (w[c].q = w[c].q || []).push(arguments);
+                  };
+                  s.async = true;
+                  s.src = 'https://call.chatra.io/chatra.js';
+                  if (d.head) d.head.appendChild(s);
+              })(document, window, 'Chatra');
+            </script>
+            <!-- /Chatra {/literal} -->
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+        <link rel="stylesheet" href="Slidebar/style.css">
+        <link rel="stylesheet" href="CSS/lstyle.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">   
+          <!-- Start of Async Drift Code -->
+        
+        <!-- End of Async Drift Code -->
+        <title>Himalaya Hotel</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="#" class="nav__logo" id="hlogo">
+                        Himalaya Group
+                    </a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="#" class="nav__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="hotels.html" class="nav__link">Hotel</a>
+                        </li>
+                        <!--=============== DROPDOWN ===============-->
+                        <li class="dropdown__item">
+                          <a href="room.html" class="nav__link">Rooms</a>                      
+                            <div class="nav__link dropdown__button">
+                                 <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Premium</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Single Bed</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Double Bed</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-heart-3-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Deluxe</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Single Bed</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Double Bed</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-mark-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Deluxe<sup>+</sup></span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Singele Bed</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Double Bed</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-file-paper-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Meeting Room</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Small</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Medium</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Large</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav__link">About</a>
+                        </li>
+                        <li>
+                            <a href="booknow.html" class="nav__link">Book Now</a>
+                        </li>
+                        <li>
+                           <a href="#" class="nav__link" id="loginBtn">Log In</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link" id="signupBtn">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== Login-Signup ===============-->
+        <div class="section1" >
+            <!--=============== Log IN ===============-->
+            <div class="form-box-login" id="modalContainer">
+              <div class="form-value">
+                <form action="">
+                  <div class="closelogin"><i class="fa-solid fa-circle-xmark"></i></div>
+                  <div class="logline">Log In</div>
+                  <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" required />
+                    <label for="">Email</label>
+                  </div>
+                  <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" required />
+                    <label for="">Password</label>
+                  </div>
+                  <div class="forget">
+                    <label for="">
+                      <input type="checkbox">Remember Me
+                      <a href="#">Forgot Password</a></label>
+                  </div>
+                  <div class="logbutton">Log in</div>
+                  <div class="register">
+                    <p>Don't have a account? <a href="#" id="sign">Sign Up</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+      
+            <!--=============== Sign Up ===============-->
+            <div class="form-box-signup" id="modalContainer2">
+              <div class="form-value">
+                <form action="">
+                  <div class="closesignup"><i class="fa-solid fa-circle-xmark"></i></div>
+                  <div class="logline">Sign Up</div>
+      
+                  <div class="inputbox">
+                      <i class="fa-solid fa-user" style="position: absolute; right: 8px; color: #fff; font-size: 1.2em; top: 20px;"></i>
+                      <input type="text" required />
+                      <label for="">Username</label>
+                    </div>
+      
+                  <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" required />
+                    <label for="">Email</label>
+                  </div>
+                  <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" required />
+                    <label for="">Password</label>
+                  </div>
+                  <div class="forget">
+                    <label for=""
+                      ><input type="checkbox" />Remember Me
+                  </div>
+                  <div class="logbutton">Sign Up</div>
+                  <div class="register">
+                    <p>Already have an account?<a href="#" id="log">   Log In</Inp></a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+
+        <section id="home" class="homeboy">
+            <h1>Himalaya Hotel</h1>
+            <h2>Where luxury meets comfort.<br>
+            </h2>
+            <h2>
+                A world of luxury <br>and<br> relaxation.
+            </h2>
+        </section>
+
+        <section id="hotels" class="slider78">
+            <h1 style="font-size: 35px">Our Hotels:</h1>
+            <section id="tranding">
+                <div class="container22">
+                  <div class="swiper tranding-slider">
+                    <div class="swiper-wrapper">
+                      <!-- Slide-start -->
+                      <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                          <img src="IMG/Hotel/hotel 1.jpg" alt="Tranding">
+                        </div>
+                        <div class="tranding-slide-content">
+                          <div class="tranding-slide-content-bottom">
+                            <h2 class="h-name">
+                              Himalaya Hotel Newroad , Pokhara
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slide-end -->
+                      <!-- Slide-start -->
+                      <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                          <img src="IMG/Hotel/hotel2.jpg" alt="Tranding">
+                        </div>
+                        <div class="tranding-slide-content">
+                          <div class="tranding-slide-content-bottom">
+                            <h2 class="h-name">
+                              Himalaya Hotel Lakeside , Pokhara
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slide-end -->
+                      <!-- Slide-start -->
+                      <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                          <img src="IMG/Hotel/hotel3.jpg" alt="Tranding">
+                        </div>
+                        <div class="tranding-slide-content">
+                          <div class="tranding-slide-content-bottom">
+                            <h2 class="h-name">
+                              Himalaya Hotel Bharatpur , Chitwan
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slide-end -->
+                      <!-- Slide-start -->
+                      <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                          <img src="IMG/Hotel/hotel4.jpg" alt="Tranding">
+                        </div>
+                        <div class="tranding-slide-content">
+                          <div class="tranding-slide-content-bottom">
+                            <h2 class="h-name">
+                              Himalaya Hotel Maitighar , Kathmandu
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slide-end -->
+                      <!-- Slide-end -->
+                    </div>
+                    <div class="tranding-slider-control">
+                      <div class="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                      </div>
+                      <div class="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+          
+                  </div>
+                </div>
+              </section>
+        </section>
+
+        <section id="rooms" class="slider78">
+            <h1 style="font-size: 35px">Our Rooms:</h1>
+            <section id="tranding">
+              <div class="container22">
+                <div class="swiper tranding-slider">
+                  <div class="swiper-wrapper">
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img src="IMG/Room/premium.jpeg" alt="Tranding">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="r-name">
+                            Premium Room
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img src="IMG/Room/Deluxe.jpeg" alt="Tranding">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="r-name">
+                            Deluxe Room
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img src="IMG/Room/Deluxe+.jpeg" alt="Tranding">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="r-name">
+                            Deluxe+ Room
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img src="IMG/Room/meeting.jpeg" alt="Tranding">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="r-name">
+                            Meeting Room
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-end -->
+                  </div>
+                  <div class="tranding-slider-control">
+                    <div class="swiper-button-prev slider-arrow">
+                      <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-button-next slider-arrow">
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+        
+                </div>
+              </div>
+            </section>
+        </section>
+
+  
+        <h2 style="color: rgb(16, 16, 16); margin-top:20rem; font-size: 35px;">Amenities:</h2>
+        <section class="amenities">
+          <input type="radio" name="dot" id="gym" checked>
+          <input type="radio" name="dot" id="restaurant">
+          <input type="radio" name="dot" id="bar">
+          <input type="radio" name="dot" id="cafee">
+          <input type="radio" name="dot" id="pool">
+  
+  <!-- List Area -->
+          <div class="am-content">
+              <div class="am-list">
+                  <label for="gym" class="gym">
+                      <span class="topic">Gym</span>
+                  </label>
+  
+                  <label for="restaurant" class="restaurant">
+                      <span class="topic">Restaurant</span>
+                  </label>
+  
+                  <label for="bar" class="bar">
+                      <span class="topic">Bar</span>
+                  </label>
+  
+                  <label for="cafee" class="cafee">
+                      <span class="topic">Cafe</span>
+                  </label>
+  
+                  <label for="pool" class="pool">
+                      <span class="topic">Swimming Pool</span>
+                  </label>
+              </div>
+  
+  <!-- Text Area -->
+              <div class="text-block">
+                  <div class="gym text">
+                      <h2>Gym Content</h3>
+                          <p>
+                              About home ipsum dolor sit amet consectetur adipisicing elit. Aut corrupti commodi, neque blanditiis assumenda eos harum, maxime tempore numquam laboriosam vitae obcaecati quae doloremque qui quisquam. Quis mollitia porro sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, nam? Vero est neque consectetur nobis nostrum nemo voluptatem quod, accusantium assumenda autem reprehenderit aliquam molestias dolor! Possimus rem earum a? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt corrupti deleniti non asperiores veniam totam saepe enim aspernatur qui animi excepturi fugit nemo, alias impedit corporis repudiandae ea dolorum quod.
+                          </p>
+                  </div>
+  
+                  <div class="restaurant text">
+                      <h2>Restaurant Content</h3>
+                          <p>
+                              About blog ipsum dolor sit amet consectetur adipisicing elit. Aut corrupti commodi, neque blanditiis assumenda eos harum, maxime tempore numquam laboriosam vitae obcaecati quae doloremque qui quisquam. Quis mollitia porro sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, nam? Vero est neque consectetur nobis nostrum nemo voluptatem quod, accusantium assumenda autem reprehenderit aliquam molestias dolor! Possimus rem earum a? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt corrupti deleniti non asperiores veniam totam saepe enim aspernatur qui animi excepturi fugit nemo, alias impedit corporis repudiandae ea dolorum quod.
+                          </p>
+                  </div>
+  
+                  <div class="bar text">
+                      <h2>Bar Content</h3>
+                          <p>
+                              About help ipsum dolor sit amet consectetur adipisicing elit. Aut corrupti commodi, neque blanditiis assumenda eos harum, maxime tempore numquam laboriosam vitae obcaecati quae doloremque qui quisquam. Quis mollitia porro sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, nam? Vero est neque consectetur nobis nostrum nemo voluptatem quod, accusantium assumenda autem reprehenderit aliquam molestias dolor! Possimus rem earum a? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt corrupti deleniti non asperiores veniam totam saepe enim aspernatur qui animi excepturi fugit nemo, alias impedit corporis repudiandae ea dolorum quod.
+                          </p>
+                  </div>
+  
+                  <div class="cafee text">
+                      <h2>Cafee Content</h3>
+                          <p>
+                              About code ipsum dolor sit amet consectetur adipisicing elit. Aut corrupti commodi, neque blanditiis assumenda eos harum, maxime tempore numquam laboriosam vitae obcaecati quae doloremque qui quisquam. Quis mollitia porro sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, nam? Vero est neque consectetur nobis nostrum nemo voluptatem quod, accusantium assumenda autem reprehenderit aliquam molestias dolor! Possimus rem earum a? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt corrupti deleniti non asperiores veniam totam saepe enim aspernatur qui animi excepturi fugit nemo, alias impedit corporis repudiandae ea dolorum quod.
+                          </p>
+                  </div>
+  
+                  <div class="pool text">
+                      <h2>Swimming Pool Content</h3>
+                          <p>
+                              About content ipsum dolor sit amet consectetur adipisicing elit. Aut corrupti commodi, neque blanditiis assumenda eos harum, maxime tempore numquam laboriosam vitae obcaecati quae doloremque qui quisquam. Quis mollitia porro sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, nam? Vero est neque consectetur nobis nostrum nemo voluptatem quod, accusantium assumenda autem reprehenderit aliquam molestias dolor! Possimus rem earum a? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt corrupti deleniti non asperiores veniam totam saepe enim aspernatur qui animi excepturi fugit nemo, alias impedit corporis repudiandae ea dolorum quod.
+                          </p>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+
+        <section class="maps">
+          <div class="map1">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.036667732067!2d85.32395955!3d27.69383745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1638187678048!5m2!1sen!2snp" width="600" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy" ></iframe>
+                <p>Map Here:</p>
+          </div>
+          <div class="info">
+              <div class="info1">
+                <h2>Contact us:</h2>
+                <h3><i class="fa-solid fa-location-dot fa-xl"></i> Address:<br>
+                Matepani , Pokhara</h3>
+                <h3 href="#"><i class="fa-solid fa-square-phone fa-xl"></i> Phone Number:<br>9816143286</h3>
+                <h3 href="#"><i class="fa-solid fa-envelope fa-xl"></i> Email:<br>Himalayagroup@email.com</h3>
+            </div>
+            <div class="info2">
+              <h2>Follow Us:</h2>
+              <div class="infoimg">
+                  <a href="#"><img src="IMG/facebook.png"></a>
+                  <a href="#"><img src="IMG/telegram.png"></a>
+                  <a href="#"><img src="IMG/twitter.png"></a>
+              </div>
+          </div>
+          </div>
+        </section>
+
+
+  <div class="fotter">
+    <div class="footy">
+        <div class="f1">
+            <h1>Himalaya Group</h1>
+        </div>
+        <div class="f3">
+            <h2>Useful Info:</h2>
+            <div class="ficons">
+                <h3><i class="fa-solid fa-location-dot"></i> Address:<br>
+                Matepani , Pokhara</h3>
+                <h3 href="#"><i class="fa-solid fa-square-phone"></i> Phone Number:<br>9816143286</h3>
+                <h3 href="#"><i class="fa-solid fa-square-phone"></i> Email:<br>Himalayagroup@email.com</h3>
+
+            </div>
+        </div>
+        <div class="f4">
+            <h2>Follow Us:</h2>
+            <div class="fimg">
+                <a href="#"><img src="IMG/facebook.png"></a>
+                <a href="#"><img src="IMG/telegram.png"></a>
+                <a href="#"><img src="IMG/twitter.png"></a>
+            </div>
+        </div>
+    </div>
+    <h2><i class="fa-solid fa-copyright fa-xl" style="color: #949ba5;"></i>Himalaya Group</h2>
+ </div>
+
+
+        <!--=============== MAIN JS ===============-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="l.js"></script>
+        <script src="sign-log.js"></script>
+    </body>
+</html>

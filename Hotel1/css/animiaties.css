@@ -1,0 +1,187 @@
+.amenities {
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 1.4rem;
+    background: rgb(221, 185, 185);
+    padding: 2.5rem 3.125rem 2.5rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    margin: 120px 115px;
+}
+input {
+    display: none;
+}
+
+.am-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.am-list {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 2;
+    width: 20%;
+    margin-right: 3rem;
+}
+
+.am-list label {
+    height: 3.75rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: .3rem 0;
+    border-radius: .5rem;
+    line-height: 3.75rem;
+    padding-left: 1rem;
+    transition: .3s;
+}
+.about1 img{
+    
+    width: 400px;
+    height: 400px;
+    
+}
+.about1{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.about1 p1{
+    margin:5px;
+}
+.gym1 img{
+    width: 350px;
+    height: 300px;
+    margin: 0px 31px;
+    padding: 5px 7px;
+    filter: brightness(110%) contrast(120%);
+   
+}
+.gym1 p{
+    margin-top:6px;
+}
+.blog11{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 13px;
+}
+ .blog1 {
+     margin: 0px 7px;
+    padding: 5px 0px; 
+    width: 100%;
+ display: block;
+ border: 1px solid cadetblue;
+ border-radius: 15px;
+ background: #f3f2c2;
+}
+.blog1 .user .fa-solid{
+    margin-top: 3px;
+    border: 1px solid ;
+    padding: 4px ;
+    align-items: center;
+    border-radius: 50%;
+    width: 29px;
+    height: 31px;
+}
+.blog1 .user{
+    display: flex;
+    padding: 10px;
+}
+ .blog .blog1 .user h3{
+margin: 0px 0px;
+padding: 3px;
+}
+.blog1 p1{
+    padding: 10px;
+    color: rgb(221, 100, 44);
+}
+.text .contact h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.text .contact p1{
+    font-size: 18px;
+}
+
+
+.am-list label:hover {
+    color: rgb(87, 16, 153);
+}
+
+#home:checked ~ .am-content > .am-list > .home {
+    background: rgb(104, 26, 177);
+    color: white;
+}
+
+#about:checked ~ .am-content > .am-list > .about {
+    background: rgb(104, 26, 177);
+    color: white;
+}
+
+#rooms:checked ~ .am-content > .am-list > .rooms {
+    background: rgb(104, 26, 177);
+    color: white;
+}
+
+#foods:checked ~ .am-content > .am-list > .foods {
+    background: rgb(104, 26, 177);
+    color: white;
+}
+
+#gym:checked ~ .am-content > .am-list > .gym {
+    background: rgb(104, 26, 177);
+    color: white;
+}
+
+#blog:checked ~ .am-content > .am-list > .blog {
+    background: rgb(104, 26, 177);
+    color: white;
+}
+
+#help:checked ~ .am-content > .am-list > .help {
+    background: rgb(104, 26, 177);
+    color: white;
+}
+
+.text-block {
+    width: 80%;
+    height: 100%;
+}
+ 
+.text-block h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.text-block p {
+    text-align: justify;
+    line-height: 1.8rem;
+}
+.text-block .text{
+    display: none;
+}
+#home:checked ~ .am-content > .text-block > .home{
+    display: block;
+}
+#about:checked ~ .am-content > .text-block > .about{
+    display: block;
+}
+#rooms:checked ~ .am-content > .text-block > .rooms{
+    display: block;
+}
+#foods:checked ~ .am-content > .text-block > .foods{
+    display: block;
+}
+#gym:checked ~ .am-content > .text-block > .gym{
+    display: block;
+}
+#blog:checked ~ .am-content > .text-block > .blog{
+    display: block;
+}
+#help:checked ~ .am-content > .text-block > .help{
+    display: block;
+}
+
+          
+  

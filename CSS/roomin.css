@@ -1,0 +1,48 @@
+.roomcont{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.r101{
+    margin-top: 7rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    height: 80vh;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(20, 19, 19, 0.5);
+    backdrop-filter: blur(15px);
+    text-align: center;   
+}
+
+.r201{
+    background-color: rgba(181, 181, 156,0.8);
+    width: 80%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.r202{
+    margin-top: -2rem;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 50%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proom{
+background-color: rgba(156, 126, 185,0.7);
+width: 220px;
+border-radius: 8px;
+height: 60px;
+}

@@ -1,0 +1,47 @@
+.mapcontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.mapcontainer img{
+    width: 80%;
+    height: 80%;
+}
+
+.mapcontainer h3{
+    font-size: 90%;
+}
+
+.pkr{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 6%;
+}
+
+.pkr:hover{
+    color: red;
+}
+
+.ktm{
+    position: absolute;
+    margin-top: 10.3rem;
+    margin-left: 25.2rem;
+}
+
+.ktm:hover{
+    color: red;
+}
+
+.btr{
+    position: absolute;
+    margin-top: 12.3rem;
+    margin-left: 11.2rem;
+}
+
+.btr:hover{
+    color: red;
+}
