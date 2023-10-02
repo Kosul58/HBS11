@@ -137,7 +137,7 @@
   <!--=============== Log IN ===============-->
   <div class="form-box-login" id="modalContainer">
     <div class="form-value">
-      <form action="">
+      <form action="/login" method="get">
         <div class="closelogin"><i class="fa-solid fa-circle-xmark"></i></div>
         <div class="logline">Log In</div>
         <div class="inputbox">
@@ -152,7 +152,6 @@
         </div>
         <div class="forget">
           <label for="">
-            <input type="checkbox">Remember Me
             <a href="#">Forgot Password</a></label>
         </div>
         <div class="logbutton">Log in</div>
@@ -166,31 +165,28 @@
   <!--=============== Sign Up ===============-->
   <div class="form-box-signup" id="modalContainer2">
     <div class="form-value">
-      <form action="">
+      <form action="/register" method="post">
         <div class="closesignup"><i class="fa-solid fa-circle-xmark"></i></div>
         <div class="logline">Sign Up</div>
 
         <div class="inputbox">
             <i class="fa-solid fa-user" style="position: absolute; right: 8px; color: #fff; font-size: 1.2em; top: 20px;"></i>
-            <input type="text" required />
+            <input type="text" name="uname" required />
             <label for="">Username</label>
           </div>
 
         <div class="inputbox">
           <ion-icon name="mail-outline"></ion-icon>
-          <input type="email" required />
+          <input type="email" name="email" required />
           <label for="">Email</label>
         </div>
         <div class="inputbox">
           <ion-icon name="lock-closed-outline"></ion-icon>
-          <input type="password" required />
+          <input type="password" name="pwd" required />
           <label for="">Password</label>
         </div>
-        <div class="forget">
-          <label for=""
-            ><input type="checkbox" />Remember Me
-        </div>
-        <div class="logbutton">Sign Up</div>
+        <div>
+          <input type="submit" class="logbutton" name="submit"></div>
         <div class="register">
           <p>Already have an account?<a href="#" id="log">   Log In</Inp></a></p>
         </div>
