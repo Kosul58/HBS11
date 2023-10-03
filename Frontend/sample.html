@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <!--===== Boxicons CSS =====-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+     
+    <title>Custom Dropdown Select Menu</title>
+    <style>
+                /* ===== Google Font Import - Poppins ===== */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background: #E3F2FD;
+        }
+        .select-menu1{
+            width: 380px;
+            margin: 140px auto;
+        }
+        .select-menu1 .select-btn1{
+            display: flex;
+            height: 55px;
+            background: #fff;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 400;
+            border-radius: 8px;
+            align-items: center;
+            cursor: pointer;
+            justify-content: space-between;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .select-btn1 i{
+            font-size: 25px;
+            transition: 0.3s;
+        }
+        .select-menu1.active .select-btn1 i{
+            transform: rotate(-180deg);
+        }
+        .select-menu1 .options1{
+            position: relative;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 0 3px rgba(0,0,0,0.1);
+            display: none;
+        }
+        .select-menu1.active .options1{
+            display: block;
+        }
+        .options1 .option1{
+            display: flex;
+            height: 55px;
+            cursor: pointer;
+            padding: 0 16px;
+            border-radius: 8px;
+            align-items: center;
+            background: #fff;
+        }
+        .options1 .option1:hover{
+            background: #F2F2F2;
+        }
+        .option1 i{
+            font-size: 25px;
+            margin-right: 12px;
+        }
+        .option1 .option-text1{
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="select-menu1">
+        <div class="select-btn1">
+            <span class="sBtn-text1" id="roomcat" name="roomcategory">Room Category</span>
+            <i class="bx bx-chevron-down"></i>
+        </div>
+
+        <ul class="options1">
+            <li class="option1">
+                <span class="option-text1">Premium</span>
+            </li>
+            <li class="option1">
+                <span class="option-text1">Deluxe</span>
+            </li>
+            <li class="option1">
+                <span class="option-text1">Deluxe+</span>
+            </li>
+            <li class="option1">
+                <span class="option-text1">Meeting</span>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const optionMenu1 = document.querySelector(".select-menu1"),
+       selectBtn1 = optionMenu1.querySelector(".select-btn1"),
+       options1 = optionMenu1.querySelectorAll(".option1"),
+       sBtn_text1 = optionMenu1.querySelector(".sBtn-text1");
+
+            selectBtn1.addEventListener("click", () => optionMenu1.classList.toggle("active"));       
+
+            options1.forEach(option1 =>{
+                option1.addEventListener("click", ()=>{
+                    let selectedOption1 = option1.querySelector(".option-text1").innerText;
+                    sBtn_text1.innerText = selectedOption1;
+
+                    optionMenu1.classList.remove("active");
+                });
+});
+        
+    </script>
+         
+</body>
+</html>

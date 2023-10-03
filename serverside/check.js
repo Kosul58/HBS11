@@ -1,0 +1,1 @@
+User.findone({name:'kosul'}).then(m => console.log(m))

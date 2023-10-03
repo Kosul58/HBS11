@@ -15,7 +15,7 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <div class="nav__data">
-                    <a href="#" class="nav__logo" id="hlogo">
+                    <a  class="nav__logo" id="hlogo">
                         Himalaya Group
                     </a>
     
@@ -28,15 +28,18 @@
                 <!--=============== NAV MENU ===============-->
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li>
-                            <a href="#" class="nav__link">Home</a>
-                        </li>
-                        <li>
-                            <a href="hotels.html" class="nav__link">Hotel</a>
-                        </li>
+                        <form action='/hotels' method="post">
+                            <button class="logoutbuton" >
+                                <a  id="hotelx88" class="nav__link" >Hotels</a>
+                            </button>
+                        </form>
                         <!--=============== DROPDOWN ===============-->
                         <li class="dropdown__item">
-                          <a href="room.html" class="nav__link">Rooms</a>                      
+                            <form action='/rooms' method="post">
+                                <button class="logoutbuton" >
+                                    <a  id="rmx98" class="nav__link" >Rooms</a>
+                                </button>
+                            </form>                      
                             <div class="nav__link dropdown__button">
                                  <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                             </div>
@@ -82,7 +85,7 @@
                                             <i class="ri-book-mark-line"></i>
                                         </div>
     
-                                        <span class="dropdown__title">Deluxe<sup>+</sup></span>
+                                        <span class="dropdown__title" id="signupBtn">Deluxe<sup>+</sup></span>
     
                                         <ul class="dropdown__list">
                                             <li>
@@ -99,7 +102,7 @@
                                             <i class="ri-file-paper-2-line"></i>
                                         </div>
     
-                                        <span class="dropdown__title">Meeting Room</span>
+                                        <span class="dropdown__title" id="loginBtn">Meeting Room</span>
     
                                         <ul class="dropdown__list">
                                             <li>
@@ -117,16 +120,31 @@
                             </div>
                         </li>
                         <li>
-                            <a href="about.html" class="nav__link">About</a>
+                            <form action='/about' method="post">
+                                <button class="logoutbuton" >
+                                    <a  id="abt99" class="nav__link" >About</a>
+                                </button>
+                            </form>
                         </li>
                         <li>
-                            <a href="booknow.html" class="nav__link">Book Now</a>
+                            <form action='/booknow' method="post">
+                                <button class="logoutbuton" >
+                                    <a  id="bkr8" class="nav__link" >Book Now</a>
+                                </button>
+                            </form>                        </li>
+                        <li>
+                            <form action='/admin' method="post">
+                                <button class="logoutbuton" >
+                                    <a  id="memname" class="nav__link" >Member Name</a>
+                                </button>
+                            </form>
                         </li>
                         <li>
-                           <a href="#" class="nav__link" id="loginBtn">Log In</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav__link" id="signupBtn">Sign Up</a>
+                            <form action='/logout' method="post">
+                                <button class="logoutbuton" >
+                                    <a  id="logout" class="nav__link" >Log Out</a>
+                                </button>
+                            </form>
                         </li>
                     </ul>
                 </div>
@@ -138,25 +156,26 @@
             <!--=============== Log IN ===============-->
             <div class="form-box-login" id="modalContainer">
               <div class="form-value">
-                <form action="">
+                <form action="/login" method="post">
                   <div class="closelogin"><i class="fa-solid fa-circle-xmark"></i></div>
                   <div class="logline">Log In</div>
                   <div class="inputbox">
                     <ion-icon name="mail-outline"></ion-icon>
-                    <input type="email" required />
+                    <input type="email" name="email" required />
                     <label for="">Email</label>
                   </div>
                   <div class="inputbox">
                     <ion-icon name="lock-closed-outline"></ion-icon>
-                    <input type="password" required />
+                    <input type="password" name="pwd" required />
                     <label for="">Password</label>
                   </div>
                   <div class="forget">
-                    <label for="">
-                      <input type="checkbox">Remember Me
-                      <a href="#">Forgot Password</a></label>
+                    <label for=""
+                      >
+                      <a href="#">Forgot Password</a></label
+                    >
                   </div>
-                  <div class="logbutton">Log in</div>
+                  <button type="submit" class="logbutton">Log In</button>
                   <div class="register">
                     <p>Don't have a account? <a href="#" id="sign">Sign Up</a></p>
                   </div>
@@ -167,31 +186,28 @@
             <!--=============== Sign Up ===============-->
             <div class="form-box-signup" id="modalContainer2">
               <div class="form-value">
-                <form action="">
+                <form action="/register" method="post">
                   <div class="closesignup"><i class="fa-solid fa-circle-xmark"></i></div>
                   <div class="logline">Sign Up</div>
       
                   <div class="inputbox">
                       <i class="fa-solid fa-user" style="position: absolute; right: 8px; color: #fff; font-size: 1.2em; top: 20px;"></i>
-                      <input type="text" required />
+                      <input type="text" name="uname" required />
                       <label for="">Username</label>
                     </div>
       
                   <div class="inputbox">
                     <ion-icon name="mail-outline"></ion-icon>
-                    <input type="email" required />
+                    <input type="email" name="email" required />
                     <label for="">Email</label>
                   </div>
                   <div class="inputbox">
                     <ion-icon name="lock-closed-outline"></ion-icon>
-                    <input type="password" required />
+                    <input type="password" name="pwd" required />
                     <label for="">Password</label>
                   </div>
-                  <div class="forget">
-                    <label for=""
-                      ><input type="checkbox" />Remember Me
-                  </div>
-                  <div class="logbutton">Sign Up</div>
+                  <br>
+                  <button type="submit" class="logbutton">Sign Up</button>
                   <div class="register">
                     <p>Already have an account?<a href="#" id="log">   Log In</Inp></a></p>
                   </div>
@@ -203,16 +219,13 @@
         <section class="admincont">
             <div class="admin">
                 <div class="ad1" id="act">
-                    <div class="lit" id="admnc">
-                        <div class="lit23" >
-                            <a >Admin Control</a>
-                        </div>
-                    </div>
                     <div class="icnt">
-                        <img src="IMG/Member/kosul.jpeg">
                         <h3>Kosul Gurung</h3>
                     </div>
                     <div class="lit" >
+                        <div class="lit23" id="admnc" >
+                            <a >Admin Control</a>
+                        </div>
                         <div class="lit22" id="viewm">
                                 <a>View Members</a>
                         </div>
@@ -277,12 +290,13 @@
             <h2><i class="fa-solid fa-copyright fa-xl" style="color: #949ba5;"></i>Himalaya Group</h2>
          </div>
                 <!--=============== MAIN JS ===============-->
+                <script src="/JavS/admin.js"></script>
                 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
                 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-                <script src="l.js"></script>
-                <script src="sign-log.js"></script>
+                <script src="/JavS/l.js"></script>
+                <script src="/JavS/sign-log.js"></script>
     </body>
 </html>

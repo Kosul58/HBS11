@@ -4,9 +4,7 @@ const bycrypt=require('bcrypt')
 const bodyParser= require('body-parser');
 const session = require('express-session')
 const mongoose = require('mongoose');
-
 const { randomUUID } = require('crypto');
-
 
 const app=express();
 app.use(express.json());
@@ -17,6 +15,7 @@ app.use(session({
 }))
 
 const dburl="mongodb+srv://kosul:kosul@cluster0.jn30nsv.mongodb.net/?retryWrites=true&w=majority"
+
 mongoose.connect(dburl, {
     useNewUrlParser:true,
     useUnifiedTopology:true
@@ -42,24 +41,38 @@ const uinfo = new mongoose.Schema({
     email:String,
     pwd:String
 });
+
 const User = mongoose.model('User',uinfo);
 
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('..'));
 
-
-app.get('/',(req,res)=> {  
+app.get('/', (req,res)=>{
+    res.send('Main Page')
+})
+app.get('/as',(req,res)=> {  
     const filePath = path.join(__dirname, '../Frontend/about.html');
     res.sendFile(filePath);
 })
 
-app.get('/login', async (req,res)=>{
-    console.log('login made');
-    console.log(req.session); 
-    res.send('/register')
-    const result = await User.find({name:'asd',pwd:'dsa'});
-    console.log('user is ',result.name);
+app.get('/login', (req,res)=>{
+    const filePath2 = path.join(__dirname, '../Frontend/l.html');
+    res.sendFile(filePath2)
+})
+
+app.get('/register',(req,res)=>{
+    const filePath2 = path.join(__dirname, '../Frontend/l.html');
+    res.sendFile(filePath2)
+})
+
+app.post('/login',(req,res)=>{
+    try{
+
+    }
+    catch{
+
+    }
 })
 
 app.post('/register', async (req,res)=> { 
@@ -75,11 +88,13 @@ app.post('/register', async (req,res)=> {
         const filePath2 = path.join(__dirname, '../Clientside/client.html');
         res.sendFile(filePath2)
     }catch{
-        res.send(alert('register error'));
+        const filePath2 = path.join(__dirname, '../Frontend/l.html');
+        res.sendFile(filePath2)
     }        
 })
-
 
 app.listen(3000,()=>{
     console.log('Listening on port 3000');
 });
+
+

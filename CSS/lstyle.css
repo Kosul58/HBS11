@@ -1,4 +1,22 @@
 /*=============== GOOGLE FONTS ===============*/
+body{
+  background: linear-gradient(45deg,#9f9696,#6e1812,#5a7fbe,#cf0404);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+  0%{
+      background-position: 0 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0 50%;
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -55,13 +73,17 @@ a {
   font-weight: bold;
   transition: color 0.3s;
   font-size: 2.5rem;
+  margin-top: 1px;
 }
 
 .nav__logo:hover {
   color: rgba(56, 4, 4, 0.8);
 }
 
-
+button{
+  border: 0;
+  background-color: transparent;
+}
 @media (max-width:400px) {
   .nav__logo{
     font-size: 1.5rem;
@@ -121,7 +143,7 @@ a {
   transition: background-color 0.3s;
   text-align: center;
   margin-bottom: 25px;
-  font-size: 1.2rem;
+  font-size: 18px;
 }
 
 .nav__link:hover {
@@ -248,15 +270,33 @@ a {
   }
   .nav__link {
     padding: 0;
+    cursor: pointer;
   }
   .nav__link:hover {
     background-color: initial;
   }
+
+  .logoutbuton{
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: rgba(184, 177, 177,0);
+}
+
+.nav__logo{
+  cursor: pointer;
+}
+
   /* Dropdown */
   .dropdown__button {
     column-gap: 0.25rem;
     pointer-events: none;
+    margin-top: -1px;
   }
+
+
   .dropdown__container {
     height: max-content;
     position: absolute;
@@ -338,14 +378,14 @@ Login and signup
   background-position: center;
   background-size: cover;
   background-color: rgba(255,255,255,0.5);
+  margin-top: 0;
 }
 
 .form-box-login{
+  margin-top: 6.5rem;
   position: absolute;
   width: 400px;
   height: 440px;
-  background: transparent;
-  border: 2px solid rgba(255,255,255,0.5);
   border-radius: 20px;
   backdrop-filter: blur(15px);
   display: flex;
@@ -354,11 +394,11 @@ Login and signup
   justify-content: center;
   z-index: 33;
   background-color: rgba(39, 29, 29, 0.5);
-  margin-top: 6.5rem;
   margin-left: 35%;
 }
 
 .form-box-signup{
+  margin-top: 6.5rem;
   position: absolute;
   width: 400px;
   height: 500px;
@@ -370,7 +410,6 @@ Login and signup
   justify-content: center;
   align-items: center;
   display: none;
-  margin-top: 6.5rem;
   margin-left: 35%;
   z-index: 35;
   background-color: rgba(39, 29, 29, 0.5);
@@ -387,10 +426,10 @@ Login and signup
 
 @media screen and (max-width: 1040px) {
   .form-box-signup{
-    margin-left: 20%;
+    margin-left: 30%;
   }
   .form-box-login{
-    margin-left: 20%;
+    margin-left: 30%;
   }
 }
 
@@ -399,9 +438,10 @@ Login and signup
     margin-left: 2%;
   }
   .form-box-login{
-    justify-content: 2%;
+    margin-left: 2%;
   }
 }
+
 
 .logline{
   margin-top: 20px;
@@ -427,7 +467,6 @@ Login and signup
   pointer-events: none;
   transition: .5s;
 }
-
 
 input:focus ~ label,
 input:valid ~ label{
@@ -532,6 +571,26 @@ width: 20px;
   background-color: rgba(255,255,255,0.5);
   color: #0d0c0c;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .homeboy h1{
   justify-content: center;

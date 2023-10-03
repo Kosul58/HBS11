@@ -1,9 +1,29 @@
 body{
-    background-color: rgba(155, 60, 60, 0.8);
-    background-image: url(/IMG/cool-background.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: linear-gradient(45deg,#9c2f2f,#3ea13b,#f48e21,#12cda1);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+.logoutbuton{
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: rgba(184, 177, 177,0);
 }
 
 
@@ -44,22 +64,16 @@ body{
     align-items: center;
 }
 
-
-
-.icnt img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+.icnt{
+    margin-top: 4rem;
 }
-
 .icnt h3{
     color: bisque;
-    font-size: 15px;
-    margin-top: -2px;
+    font-size: 25px;
 }
 
 .lit{
-    margin-top:2rem ;
+    margin-top:3rem ;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -69,8 +83,7 @@ body{
 .lit a{
     text-align: center;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    z-index: -2;
+    color: rgb(229, 215, 215);
 }
 
 .lit22{
@@ -82,7 +95,6 @@ body{
     border-radius: 15px;
     cursor: pointer;
     font-size: 20px;
-    z-index: 2;
 }
 
 .lit22:hover{
@@ -98,7 +110,7 @@ body{
     padding: 15px 15px;
     border-radius: 15px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .lit23:hover{

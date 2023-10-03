@@ -1,0 +1,60 @@
+
+.mrooms{
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100vh;
+  margin-top: 5rem;
+}
+
+.roomcontainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rslide {
+  height: 60vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+  text-align: center;
+}
+
+.rslide h2 {
+  position: absolute;
+  font-size: 40px;
+  bottom: 30px;
+  left: 30px;
+  margin: 0;
+  opacity: 0;
+}
+
+.rslide.active{
+  flex: 10;
+}
+
+.rslide.active h2{
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.rslide h3{
+  font-size: 26px;
+  position: relative;
+  bottom: -24rem;
+  color: rgb(2, 2, 2);
+  text-align: center;
+  opacity: 1;
+}
+
+.rslide.active h3{
+  opacity: 0;
+}

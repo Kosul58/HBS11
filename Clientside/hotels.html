@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/CSS/lstyle.css">
+        <link rel="stylesheet" href="/CSS/hotel.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">     
+        <title>Himalaya Hotel</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a  class="nav__logo" id="hlogo">
+                        Himalaya Group
+                    </a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <form action='/hotels' method="post">
+                            <button class="logoutbuton" >
+                                <a  id="hotelx88" class="nav__link" >Hotels</a>
+                            </button>
+                        </form>
+                        <!--=============== DROPDOWN ===============-->
+                        <li class="dropdown__item">
+                            <form action='/rooms' method="post">
+                                <button class="logoutbuton" >
+                                    <a id="rmx98" class="nav__link" >Rooms</a>
+                                </button>
+                            </form>                      
+                            <div class="nav__link dropdown__button">
+                                 <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Premium</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Single Bed</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Double Bed</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-heart-3-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Deluxe</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Single Bed</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Double Bed</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-mark-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Deluxe<sup>+</sup></span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Singele Bed</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Double Bed</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-file-paper-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Meeting Room</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Small</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Medium</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Large</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <form action='/about' method="post">
+                                <button class="logoutbuton" >
+                                    <a  id="abt99" class="nav__link" >About</a>
+                                </button>
+                            </form>
+                        </li>
+                        <li>
+                            <form action='/booknow' method="post">
+                                <button class="logoutbuton" >
+                                    <a  id="bkr8" class="nav__link" >Book Now</a>
+                                </button>
+                            </form>                        </li>
+                        <li>
+                            <form action='/member' method="post">
+                                <button class="logoutbuton" >
+                                    <a  id="memname" class="nav__link" >Member Name</a>
+                                </button>
+                            </form>
+                        </li>
+                        <li>
+                            <form action='/logout' method="post">
+                                <button class="logoutbuton" >
+                                    <a  id="logout" class="nav__link" >Log Out</a>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== Login-Signup ===============-->
+        <div class="section1" >
+            <!--=============== Log IN ===============-->
+            <div class="form-box-login" id="modalContainer">
+              <div class="form-value">
+                <form action="/login" method="post">
+                  <div class="closelogin"><i class="fa-solid fa-circle-xmark"></i></div>
+                  <div class="logline">Log In</div>
+                  <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" name="email" required />
+                    <label for="">Email</label>
+                  </div>
+                  <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" name="pwd" required />
+                    <label for="">Password</label>
+                  </div>
+                  <div class="forget">
+                    <label for=""
+                      >
+                      <a href="#">Forgot Password</a></label
+                    >
+                  </div>
+                  <button type="submit" class="logbutton">Log In</button>
+                  <div class="register">
+                    <p>Don't have a account? <a href="#" id="sign">Sign Up</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+      
+            <!--=============== Sign Up ===============-->
+            <div class="form-box-signup" id="modalContainer2">
+              <div class="form-value">
+                <form action="/register" method="post">
+                  <div class="closesignup"><i class="fa-solid fa-circle-xmark"></i></div>
+                  <div class="logline">Sign Up</div>
+      
+                  <div class="inputbox">
+                      <i class="fa-solid fa-user" style="position: absolute; right: 8px; color: #fff; font-size: 1.2em; top: 20px;"></i>
+                      <input type="text" name="uname" required />
+                      <label for="">Username</label>
+                    </div>
+      
+                  <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" name="email" required />
+                    <label for="">Email</label>
+                  </div>
+                  <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" name="pwd" required />
+                    <label for="">Password</label>
+                  </div>
+                  <br>
+                  <button type="submit" class="logbutton">Sign Up</button>
+                  <div class="register">
+                    <p>Already have an account?<a href="#" id="log">   Log In</Inp></a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+
+        <!--=============== About ===============-->
+
+        <h2 style="margin-top: 7rem;">
+           Our Hotels:
+        </h2>
+
+        <div class="hcontainer">
+            <div class="card" data-tilt>
+                <img src="/IMG/Hotel/hotel 1.jpg">
+                <div class="tet">
+                    <a href="#">Hotel</a>
+                </div>
+            </div>
+
+            <div class="card" data-tilt>
+                <img src="/IMG/Hotel/hotel2.jpg">
+                <div class="tet">
+                    <a href="#">Hotel</a>
+                </div>
+            </div>
+
+            <div class="card" data-tilt>
+                <img src="/IMG/Hotel/hotel3.jpg">
+                <div class="tet">
+                    <a href="#">Hotel</a>
+                </div>
+            </div>
+
+            <div class="card" data-tilt>
+                <img src="/IMG/Hotel/hotel4.jpg">
+                <div class="tet">
+                    <a href="#">Hotel</a>
+                </div>
+            </div>
+
+            <div class="card" data-tilt>
+                <img src="/IMG/Hotel/hotel5.jpg">
+                <div class="tet">
+                    <a href="#">Hotel</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="fotter">
+            <div class="footy">
+                <div class="f1">
+                    <h1>Himalaya Group</h1>
+                </div>
+                <div class="f3">
+                    <h2>Useful Info:</h2>
+                    <div class="ficons">
+                        <h3><i class="fa-solid fa-location-dot"></i> Address:<br>
+                        Matepani , Pokhara</h3>
+                        <h3 href="#"><i class="fa-solid fa-square-phone"></i> Phone Number:<br>9816143286</h3>
+                        <h3 href="#"><i class="fa-solid fa-square-phone"></i> Email:<br>Himalayagroup@email.com</h3>
+          
+                    </div>
+                </div>
+                <div class="f4">
+                    <h2>Follow Us:</h2>
+                    <div class="fimg">
+                        <a href="#"><img src="/IMG/facebook.png"></a>
+                        <a href="#"><img src="/IMG/telegram.png"></a>
+                        <a href="#"><img src="/IMG/twitter.png"></a>
+                    </div>
+                </div>
+            </div>
+            <h2><i class="fa-solid fa-copyright fa-xl" style="color: #949ba5;"></i>Himalaya Group</h2>
+          </div>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="JavS/tilt.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="/JavS/"></script>
+        <script src="/JavS/sign-log.js"></script>
+    </body>
+</html>

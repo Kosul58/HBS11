@@ -1,0 +1,36 @@
+.maps{
+    margin-left: 10%;
+    margin-top: 2rem;
+    background-color: rgba(224, 206, 206, 0.8);
+    height: 85vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    border-radius: 2rem;
+    box-shadow: 0 0 15px 15px rgba(36, 35, 35, 0.3);
+    align-items: center;
+}
+
+.map1{
+    text-align: center;
+    width:650px;
+    height: 450px;
+    font-size: 35px;
+    border-radius: 20px;
+    border: 1px solid rebeccapurple;
+}
+
+.info1 ul{
+    list-style: none;
+    font-size: 20px;
+    padding: 90px 50px;
+    color: rgb(75, 49, 49);
+}
+
+.info{
+    width: 250px;
+    height: 450px;
+    border-radius: 15px;
+    border: 2px solid rebeccapurple;
+}

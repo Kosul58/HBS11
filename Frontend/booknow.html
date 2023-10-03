@@ -18,8 +18,8 @@
             })(document, window, 'Chatra');
           </script>
           <!-- /Chatra {/literal} -->
-        <link rel="stylesheet" href="CSS/lstyle.css">
-        <link rel="stylesheet" href="CSS/booknow.css">
+        <link rel="stylesheet" href="/CSS/lstyle.css">
+        <link rel="stylesheet" href="/CSS/booknow.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">     
         <title>Himalaya Hotel</title>
@@ -29,7 +29,7 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <div class="nav__data">
-                    <a href="#" class="nav__logo" id="hlogo">
+                    <a  class="nav__logo" id="hlogo">
                         Himalaya Group
                     </a>
     
@@ -43,7 +43,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li>
-                            <a href="#" class="nav__link">Home</a>
+                            <a href="l.html" class="nav__link">Home</a>
                         </li>
                         <li>
                             <a href="hotels.html" class="nav__link">Hotel</a>
@@ -134,13 +134,13 @@
                             <a href="about.html" class="nav__link">About</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__link">Book Now</a>
+                            <a href="booknow.html" class="nav__link">Book Now</a>
                         </li>
                         <li>
-                           <a href="#" class="nav__link" id="loginBtn">Log In</a>
+                           <a  class="nav__link" id="loginBtn">Log In</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__link" id="signupBtn">Sign Up</a>
+                            <a  class="nav__link" id="signupBtn">Sign Up</a>
                         </li>
                     </ul>
                 </div>
@@ -197,6 +197,7 @@
                     <input type="email" name="email" required />
                     <label for="">Email</label>
                   </div>
+                  
                   <div class="inputbox">
                     <ion-icon name="lock-closed-outline"></ion-icon>
                     <input type="password" name="pwd" required />
@@ -213,7 +214,7 @@
         </div>
         
         <section class="bookcontrol">
-            <div class="bkpage">
+            <form class="bkpage">
                 <div class="progbar">
                     <div class="containerk11">
                         <div class="steps">
@@ -234,20 +235,31 @@
                         <div class="bk111a">
                             <div class="select-menu" >
                                 <div class="select-btn" >
-                                    <span class="sBtn-text">Select Hotel</span>
+                                    <span class="sBtn-text" id="input1">Select Hotel</span>
                                 </div>
-                                <ul class="options">
+                                <ul class="options" required>
                                     <li class="option">
-                                        <span class="option-text">Himalaya Hotel Lakeside , Pokhara</span>
+                                        <label>
+                                            <input type="radio" name="hotel" value="Himalaya Hotel Lakeside, Pokhara" required>
+                                            <span class="option-text">Himalaya Hotel Lakeside, Pokhara</span>
+                                        </label>                                    </li>
+                                    <li class="option">
+                                        <label>
+                                            <input type="radio" name="hotel" value="Himalaya Hotel Lakeside, Pokhara" required>
+                                            <span class="option-text">Himalaya Hotel Newroad, Pokhara</span>
+                                        </label>                                    
                                     </li>
                                     <li class="option">
-                                        <span class="option-text">Himalaya Hotel Newroad , Pokhara</span>
+                                        <label>
+                                            <input type="radio" name="hotel" value="Himalaya Hotel Lakeside, Pokhara" required>
+                                            <span class="option-text">Himalaya Hotel NewBaneshwor, Kathmandu</span>
+                                        </label>                                     
                                     </li>
                                     <li class="option">
-                                        <span class="option-text">Himalaya Hotel Bharatpur , Pokhara</span>
-                                    </li>
-                                    <li class="option">
-                                        <span class="option-text">Himalaya Hotel Maitighar , Pokhara</span>
+                                        <label>
+                                            <input type="radio" name="hotel" value="Himalaya Hotel Lakeside, Pokhara" required>
+                                            <span class="option-text">Himalaya Hotel Bharatpur, Chitwan</span>
+                                        </label>                                     
                                     </li>
                                 </ul>
                             </div>
@@ -273,11 +285,11 @@
                         <div class="cal">
                             <div class="checkcal">
                                 <label for="checkin">Check-in:</label>
-                                <input type="date" id="checkin" onchange="updateCheckoutMinDate()">
+                                <input type="date" id="checkin" onchange="updateCheckoutMinDate()" required>
                             </div>
                             <div class="checkcal">
                                 <label for="checkout">Check-out:</label>
-                                <input type="date" id="checkout" max="2023-12-31">
+                                <input type="date" id="checkout" max="2023-12-31" required>
                             </div> 
                         </div>
                         <div class="pgchanger">
@@ -292,69 +304,78 @@
                     <div class="bk11" id="a2">
                         <div class="roomcontainer222">
                             <div class="numx1">
-                                <label for="numberInput">Enter the number of rooms:</label>
-                                <input type="number" id="numberInput" min="1">
-                                <button onclick="generateContainers()">Submit</button>
+                                <label for="numberInput"><h2>Enter the number of rooms:</h2></label>
+                                <input type="number" id="numberInput" min="1" max="10" required>
                             </div>
-                            
-                          <template id="containerTemplate">
-                            <div class="rrcontainer">
-                              <h3>Room <span class="num22"></span>:
-                              </h3>
-                                <div class="select-menu2" >
+                            <div class="roomselectoption">
+                                <div class="select-menu2" id="sm1">
                                     <div class="select-btn2" >
-                                        <span class="sBtn-text2">Category</span>
+                                        <span class="sBtn-text2" id="input2">Room Category</span>
                                     </div>
-                                    <ul class="options2">
-                                        <li class="option2">
-                                            <span class="option-text1">Premium</span>
+                                    <ul class="options2" required>
+                                        <li class="option2" id="pz1">
+                                            <label>
+                                                <input type="radio"  required>
+                                                <span class="option2-text2" >Premium</span>
+                                            </label>                                    </li>
+                                        <li class="option2" id="pz2">
+                                            <label>
+                                                <input type="radio"  required>
+                                                <span class="option2-text2" >Deluxe</span>
+                                            </label>                                    
                                         </li>
-                                        <li class="option2">
-                                            <span class="option-text1">Deluxe</span>
+                                        <li class="option2" id="pz3">
+                                            <label>
+                                                <input type="radio"  required>
+                                                <span class="option2-text2">DeluxePlus</span>
+                                            </label>                                     
                                         </li>
-                                        <li class="option2">
-                                            <span class="option-text1">Deluxe<sup>+</sup></span>
-                                        </li>
-                                        <li class="option2">
-                                            <span class="option-text1">Meeting</span>
+                                        <li class="option2" id="pz4">
+                                            <label>
+                                                <input type="radio"  required>
+                                                <span class="option2-text2" id="gennext">Meeting</span>
+                                            </label>                                     
                                         </li>
                                     </ul>
                                 </div>
-
-                                <div class="select-menu3 s21" >
-                                    <div class="select-btn3">
-                                        <span class="sBtn-text3">Type</span>
+                                <div  class="select-menu3" id="sm3">
+                                    <div class="select-btn3" >
+                                        <span class="sBtn-text3" id="input3" name="roomtype" >Room Type</span>
                                     </div>
-                                    <ul class="options3">
-                                        <li class="option3">
-                                            <span class="option-text3">Single</span>
+                                    <ul class="options3" required>
+                                        <li class="option3" id="oxo1">
+                                            <label>
+                                                <input type="radio"   required>
+                                                <span class="option3-text3">Single</span>
+                                            </label>      
                                         </li>
-                                        <li class="option3">
-                                            <span class="option-text3 hideopt1">Double</span>
+                                        <li class="option3" id="oxo2">
+                                            <label>
+                                                <input type="radio"   required>
+                                                <span class="option3-text3">Double</span>
+                                            </label>                                    
+                                        </li>
+                                        <li class="option3" id="oxo3">
+                                            <label>
+                                                <input type="radio"   required>
+                                                <span class="option3-text3">Small</span>
+                                            </label>                                    
+                                        </li>
+                                        <li class="option3" id="oxo4">
+                                            <label>
+                                                <input type="radio"   required>
+                                                <span class="option3-text3">Medium</span>
+                                            </label>                                    
+                                        </li>
+                                        <li class="option3" id="oxo5">
+                                            <label>
+                                                <input type="radio"   required>
+                                                <span class="option3-text3">Large</span>
+                                            </label>                                    
                                         </li>
                                     </ul>
                                 </div>
-
-                                <div class="select-menu3 sm">
-                                    <div class="select-btn3">
-                                        <span class="sBtn-text3">Type</span>
-                                    </div>
-                                    <ul class="options3">
-                                        <li class="option3">
-                                            <span class="option-text3">Small</span>
-                                        </li>
-                                        <li class="option3">
-                                            <span class="option-text3">Medium</span>
-                                        </li>
-                                        <li class="option3">
-                                            <span class="option-text3">Large</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                          </template>
-                        
-                          <div id="containerWrapper"></div>
+                            </div>                           
                         </div>
                         <div class="pgchanger">
                          <div class="prev" id="b2">
@@ -366,19 +387,38 @@
                         </div>
                     </div>
                     <div class="bk11" id="a3">
-                        <h2>This will have all the contents3</h2>
+                        <div class="user_info2x">
+                            <div class="inputx22">
+                                <div class="login__box">
+                                    <input type="text" id="categoryInput" placeholder="Username" class="login__input" required>
+                                </div>
+            
+                                <div class="login__box">
+                                    <input type="email" id="typeInput" placeholder="Email" class="login__input" required>
+                                </div>
+
+                                <div class="login__box">
+                                    <input type="string" id="typeNumber" placeholder="Number" class="login__input" required>
+                                </div>
+                            </div>
+                            <div class="pricedisp" id="pricehi">
+                                <h2>Your Total Price is: Rs. <div id="priceContainer" name="totalpricexx">x</div></h2>
+                            </div>
+                        </div>
                         <div class="pgchanger">
                          <div class="prev" id="b3">
                             <a  id="b3">Prev</a>
                          </div>
                          <div class="next" id="b33">
-                            <a >Next</a>
+                            <a >Make Payment</a>
                          </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </section>
+
+
         <div class="fotter">
             <div class="footy">
                 <div class="f1">
@@ -405,14 +445,14 @@
             </div>
             <h2><i class="fa-solid fa-copyright fa-xl" style="color: #949ba5;"></i>Himalaya Group</h2>
          </div>
-                <!--=============== MAIN JS ===============-->
-                <script src="JavS/booknow.js"></script>
+                <!--=============== MAIN JS ===============-->s
+                <script src="/JavS/booknow.js"></script>
                 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
                 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-                <script src="l.js"></script>
-                <script src="sign-log.js"></script>
+                <script src="/JavS/l.js"></script>
+                <script src="/JavS/sign-log.js"></script>
     </body>
 </html>
