@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require ('path');
+const bycrypt=require('bcrypt')
 const bodyParser= require('body-parser');
 const mongoose = require('mongoose');
 
@@ -48,19 +49,30 @@ app.get('/',(req,res)=> {
 })
 
 
-app.post('/register',(req,res)=> { 
-    console.log(req.body.uname + req.body.pwd)
-    const user = new User({
-        name:req.body.uname,
-        email:req.body.email,
-        pwd:req.body.pwd
-    });
-    user.save();
-    const filePath2 = path.join(__dirname, '../Clientside/client.html');
-    res.sendFile(filePath2)
+app.post('/register', async (req,res)=> { 
+    try{
+        const hashpwd= await bycrypt.hash(req.body.pwd,10)
+        console.log(req.body.uname + req.body.pwd)
+        const user = new User({
+            name:req.body.uname,
+            email:req.body.email,
+            pwd:hashpwd
+        });
+        user.save()
+        const filePath2 = path.join(__dirname, '../Clientside/client.html');
+        res.sendFile(filePath2)
+    }catch{
+        res.send(alert('register error'));
+    }        
 })
 
+app.get('/login', async (req,res)=>{
+    try{
+        
+    }catch{
 
+    }
+})
 app.listen(3000,()=>{
     console.log('Listening on port 3000');
 });

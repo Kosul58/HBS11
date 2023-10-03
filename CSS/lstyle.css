@@ -376,6 +376,15 @@ Login and signup
   background-color: rgba(39, 29, 29, 0.5);
 }
 
+@media screen and (min-width: 1400px) {
+  .form-box-signup{
+    margin-left: 40%;
+  }
+  .form-box-login{
+    margin-left: 40%;
+  }
+}
+
 @media screen and (max-width: 1040px) {
   .form-box-signup{
     margin-left: 20%;
@@ -421,6 +430,7 @@ Login and signup
 
 
 input:focus ~ label,
+input:not(:placeholder-shown) ~ label,
 input:valid ~ label{
 top: -5px;
 }
