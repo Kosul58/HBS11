@@ -190,4 +190,5 @@ document.getElementById("X5X").addEventListener("click", function() {
 
 
 
+
 addEventListener('resize', removeStyle)

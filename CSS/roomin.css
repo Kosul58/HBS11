@@ -21,28 +21,70 @@
     backdrop-filter: blur(15px);
     text-align: center;   
 }
+ .x211{
+    height: 100%;
+    width: 100%;
+ }
 
-.r201{
-    background-color: rgba(181, 181, 156,0.8);
-    width: 80%;
-    height: 70%;
-    border-radius: 10px;
+.imgn11{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 }
 
-.r202{
-    margin-top: -2rem;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 10px;
-    width: 50%;
-    height: 10%;
+.imgn11{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+#img21{
+    display: block;
+}
+
+#img22{
+    display: none;
+}
+
+.sideimg{
+    height: 100px;
+    width: 250px;
+    z-index: 4;
+    margin-left: -20%;
+    margin-top: 20%;
+}
+
+.imagesideko{
+    cursor: pointer;
+}
+
+.x301{
+    margin-top: -5rem;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
-.proom{
-background-color: rgba(156, 126, 185,0.7);
-width: 220px;
-border-radius: 8px;
-height: 60px;
+.x302{
+    background-color: blue;
+    color: white;
+    border: 0;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-size-adjust: 14px;
+}
+
+.x302:hover{
+    background-color: aqua;
+    color: black;
+}
+
+#img31{
+    display: none;
+}
+
+#img32{
+    display: block;
 }

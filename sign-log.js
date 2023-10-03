@@ -46,3 +46,43 @@ document.querySelector(".closesignup").addEventListener("click", function() {
   }
   );
 
+//room image script
+document.getElementById("bax11").addEventListener("click", function() {
+  document.getElementById("img22").style.display = "none";
+  document.getElementById("img21").style.display = "block";
+});
+
+document.getElementById("bax22").addEventListener("click", function() {
+  document.getElementById("img21").style.display = "none";
+  document.getElementById("img22").style.display = "block";
+});
+
+document.getElementById("bax22").addEventListener("click", function() {
+  document.getElementById("img32").style.display = "none";
+  document.getElementById("img31").style.display = "block";
+});
+
+document.getElementById("bax11").addEventListener("click", function() {
+  document.getElementById("img31").style.display = "none";
+  document.getElementById("img32").style.display = "block";
+});
+
+document.getElementById("img31").addEventListener("click", function() {
+  document.getElementById("img22").style.display = "none";
+  document.getElementById("img21").style.display = "block";
+});
+
+document.getElementById("img32").addEventListener("click", function() {
+  document.getElementById("img21").style.display = "none";
+  document.getElementById("img22").style.display = "block";
+});
+
+document.getElementById("img31").addEventListener("click", function() {
+  document.getElementById("img31").style.display = "none";
+  document.getElementById("img32").style.display = "block";
+});
+
+document.getElementById("img32").addEventListener("click", function() {
+  document.getElementById("img32").style.display = "none";
+  document.getElementById("img31").style.display = "block";
+});
